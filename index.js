@@ -1,10 +1,11 @@
 function findMatching(drivers, string) {
-  const matching = drivers.filter(driver => driver.toLowerCase() === string.toLowerCase())
-  return matching
+  const matching = drivers.filter(driver => driver.toLowerCase() === string.toLowerCase());
+  return matching;
 }
 
-function fuzzyMatch() {
-
+function fuzzyMatch(drivers, string) {
+  const matching = drivers.filter(driver => driver.indexOf(string) === string.indexOf(string));
+  return matching;
 }
 
 function matchName() {
